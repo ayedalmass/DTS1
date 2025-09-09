@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTS.SOFT</title>
+    <style>
+     header{
+        color: white;
+        background-color:darkblue;
+        font-style:unset;
+        text-align: center;
+        height: 150px;
+        border-radius: 15px;
+     }   
+
+     body{
+        background-color: white;
+     }
+
+     .box{
+    background:white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 100 10px 50px lightgreen(100, 100, 100,0.5);
+    text-align: center;
+    transition: transform 0.3s;
+
+  }
+
+  .box:hover{
+    transform: translateY(-5px);
+  }
+
+  .box img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .box h3{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: darkred;
+    font-style: unset;
+  }
+
+  .box p{
+    font-size: 0.95em;
+    color: black;
+    font-style: unset;
+
+  }
+
+  .boxe{
+    background-color: #0a3d62;
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+  .btn{
+            background: darkred;
+            background: linear-gradient(to right, darkred, #333);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+        }
+        .btn:hover{
+            transform: translatey(-2px);
+            box-shadow: 0 6px 15px rgba(6, 37, 116, 0.5);
+        }
+
+        .card{
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .subject{
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .teacher{
+            font-size: 16px;
+            color: darkred;
+            margin-bottom: 5px;
+        }
+
+        .level{
+            font-size: 14px;
+            color: darkred;
+            margin-bottom: 10px;
+
+        }
+
+        .note{
+            font-size: 14px;
+            background: #ecf0f1;
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> DTS SOFT</h1>
+        <strong style="color: white;background-color: darkred; border: 5px solid white;border-radius: 10px;">منصة التعليم الاكاديمي</strong>
+        <br><br>
+        
+    </header>
+    <br>
+    <center>
+    <div style="color: white; border: 3px solid darkred;border-radius: 10px; width: 500px; background-color: darkblue;" id="clock">Loading...</div>  <script type="text/javascript">  function refrClock()  {  var d=new Date();  var s=d.getSeconds();  var m=d.getMinutes();  var h=d.getHours();  var day=d.getDay();  var date=d.getDate();  var month=d.getMonth();  var year=d.getFullYear();  var days=new Array("الاحد","الاثنين","الثلاثاء","الاربعاء","الخميس","الجمعة","السبت");  var months=new Array("يناير","فبراير","مارس","ابريل","ماي","يونيو","يوليو","اغسطس","سبتمبر","اكتوبر","نوفمبر","ديسمبر");  var am_pm;  if (s<10) {s="0" + s}  if (m<10) {m="0" + m}  if (h>12) {h-=12;am_pm = "مساءً."}  else {am_pm="صباحاً."}  if (h<10) {h="0" + h}  document.getElementById("clock").innerHTML=days[day] + " " + date + " من " + months[month] + " " + year + "   |   الساعة الان " + h + ":" + m + ":" + s + " " + am_pm;  setTimeout("refrClock()",1000);  }  refrClock();</script>
+    </center>
+    <br>
+    <h3><center>مرحبا بكم في الموقع الرسمي لدفعتنا  -  قسم تكنولوجيا المعلومات  -  بجامعة الحضارة</center></h3>
+    <br>
+    <h2 style="color: darkred;border: darkblue solid 3px; "><center>المواد الدراسية </center></h2>
+    <br>
+
+    <div class="container">
+        <div class="card">
+            <div class="subject">رياضيات متقطعة</div>
+            <div class="teacher">صالح الصباري</div>
+            <div class="level">نظري</div>
+        </div>
+        <div class="card">
+            <div class="subject">البرمجة الكائنية رقمي </div>
+            <div class="teacher">بدر</div>
+            <div class="level">عملي</div>
+        </div>
+        <div class="card">
+            <div class="subject">البرمجة الكائنية </div>
+            <div class="teacher">عبدالرقيب الشوافي</div>
+            <div class="level">نظري</div>
+        </div>
+        <div class="card">
+            <div class="subject">اساسيات تكنولوجيا الويب</div>
+            <div class="teacher">الا عبدالكريم</div>
+            <div class="level">نظري</div>
+        </div>
+        <div class="card">
+            <div class="subject">مقدمة في الشبكات</div>
+            <div class="teacher">عبير شجاع الدين</div>
+            <div class="level">نظري</div>
+        </div>
+        <div class="card">
+            <div class="subject">تصميم منطقي رقمي</div>
+            <div class="teacher">علي محسن</div>
+            <div class="level">عملي</div>
+        </div>
+        <div class="card">
+            <div class="subject">اساسيات تكنولوجيا الويب</div>
+            <div class="teacher">علي محسن</div>
+            <div class="level">عملي</div>
+        </div>
+        <div class="card">
+            <div class="subject">مقدمة في قواعد البيانات</div>
+            <div class="teacher">حسام دومان</div>
+            <div class="level">عملي</div>
+        </div>
+        <div class="card">
+            <div class="subject">مقدمة في قواعد البيانات</div>
+            <div class="teacher">سعاد عثمان</div>
+            <div class="level">نظري</div>
+        </div>
+        <div class="card">
+            <div class="subject">مقدمة في الشبكات </div>
+            <div class="teacher">عزالدين النزيلي</div>
+            <div class="level">عملي</div>
+        </div>
+       
+    </div>
+   
+</body>
+</html>
